@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        
+    </head>
+
+
+    <body>
+        <div><h1>Title of project here</h1></div>
+        <script>
+        
+
+        // var d3 = require("d3");
+        
+        
+            d3.select('body')
+                .append('svg')
+                .attr('width', window.innerWidth)
+                .attr('height', window.innerHeight)
+                .style("color", "red");
+
+            var svg = d3.select('svg');
+            
+            var circle = d3.select(svg)
+                .append('circle')
+                .attr('r', 20)
+                .attr('cx', 200)
+                .attr('cy', 75);
+
+            d3.csv('wiid.csv', function(error, d) {
+               
+               console.log(d);
+               
+              d.forEach(function(d, i){
+                svg.append('circle');
+            });
+            });
+            
+        </script>
+    </body>
+</html>

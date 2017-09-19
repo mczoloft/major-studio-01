@@ -6,67 +6,64 @@
 
         <script>
             // globals
-            var x, y, xSpeed, ySpeed, 
-            
-            var paddleColor;
-            
+            var x, y, xSpeed, ySpeed, paddleColor;
             var score = 0;
-            
-            var quantity = 10;
 
             // p5 calls setup() exactly once when the canvas loads
             function setup() {
                 createCanvas(500, 500);
                 rectMode(CENTER);
-                for (var i=0; i<quantity; i++)
-                    x[i] = random(width);
-                    y[i] = random(height);
-                    xSpeed[i] = random(-2.5, 2.5);
-                    ySpeed[i] = random(-2.5, 2.5);
-                paddleColor = color(255, 255, 0);
+                x = random(width-20) + 10; // account for ellipse size when initializing position
+                y = random(height-20) + 10; // account for ellipse size when initializing position
+                xSpeed = random(-2.5, 2.5);
+                ySpeed = random(-2.5, 2.5);
+                
+                // paddle color
+                paddleColor = color(0, 0, 0);
+
              }
 
             function draw() {
                 background('lightgray');
                 fill('black');
-                
+
                 // position update
                 x = x + xSpeed;
                 y = y + ySpeed;
-                
+
                 // boundaries
                 // horizontal boundary
                 if (x > width - 5 || x < 5) {
                     xSpeed = xSpeed * -1; // xSpeed *= -1;
                 }
-                
+
                 // top boundary
                 if (y < 5) {
                     ySpeed = ySpeed * -1; // xSpeed *= -1;
                 }
-                
 
-                // paddel boundary
-                if (y >= height - 25 && abs(mouseX-x) < width / 12 && y < height - 25 + ySpeed) {
-                    ySpeed = ySpeed * -1;  // ySpeed *= -1;
+                // paddel boundary: greather than the top bou
+                if (y >= height - 40 && abs(mouseX-x) < width/12 && y < height - 40 + ySpeed) {
+                    ySpeed = ySpeed * -1  // ySpeed *= -1;
                     // fun items
                     xSpeed *= 1.2;
                     ySpeed *= 1.2;
                     paddleColor = color(random(255), 0, 0);
-                    
+                    score++;
                 }
-                
-                
-                // x += xSpeed;
-                // y += ySpeed;
-                
-                // xSpeed = xSpeed + something;
 
                 ellipse(x, y, 10, 10);
                 fill(paddleColor);
-                strokeWeight(0);
                 rect(mouseX, height - 30, width / 6, 10, 5);
+                fill('black');
+                text(score, mouseX, height-25);
             }
+            
+            function mousePressed() {
+                // initialize all variables on mouse pressed by calling setup
+                setup();
+            }
+            
         </script>
     </head>
     <body>
