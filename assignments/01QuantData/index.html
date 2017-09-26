@@ -2,41 +2,53 @@
 <html>
     <head>
         <script src="https://d3js.org/d3.v4.min.js"></script>
-        
+        <style type="text/css">
+            #viz{overflow: visible; border-color: black; border-style: solid; border-width: 20px 0px 1px 0px; }
+            body{margin: 10% 10% 10% 10%;
+                font-family: Verdana, System;
+                font-style: normal;
+            }
+            
+        </style>
     </head>
 
-
     <body>
-        <div><h1>Title of project here</h1></div>
+        <div id='content'><h1>GINI vs. Quintiles in Americas 2013</h1></div>
+        <div id='viz'></div>
         <script>
-        
 
-        // var d3 = require("d3");
-        
-        
-            d3.select('body')
-                .append('svg')
-                .attr('width', window.innerWidth)
-                .attr('height', window.innerHeight)
-                .style("color", "red");
+            var corpo = d3.select('body');
+            // .attr('width', window.innerWidth-50)
+            // .attr('height', window.innerHeight-50);
 
-            var svg = d3.select('svg');
+            var visuals = corpo.select('#viz')
+            .append('svg')
+            .attr('width', window.innerWidth-(window.innerWidth/5))
+            .attr('height', window.innerHeight-100)
+            .style('overflow', 'visible');
+
+            var dataset;
             
-            var circle = d3.select(svg)
-                .append('circle')
-                .attr('r', 20)
-                .attr('cx', 200)
-                .attr('cy', 75);
+            d3.csv ('wiid.csv', function(error, data){
 
-            d3.csv('wiid.csv', function(error, d) {
-               
-               console.log(d);
-               
-              d.forEach(function(d, i){
-                svg.append('circle');
+            if (error) throw error;
+
+            dataset = data.filter(function(d) {return d.Region == 'Americas' && d.Source_Comments == 'PovcalNet' && d.Year == '2013' && d.Welfaredefn == 'Income';});
+
+            visuals.selectAll('circle')
+            .data(dataset)
+            .enter()
+            .append('circle')
+            .attr('cx', function(d, i) {return (i*((window.innerWidth-200)/15));} )
+            .attr('cy', function (d) {return (d.Q5*(window.innerHeight/100));})
+            .attr('r', function(d) {return Math.sqrt((d.Gini*20)*3.1415);} )
+            .style('fill', 'black')
+            .style('overflow', 'visible')
+            .style('opacity', 0.2);
             });
-            });
-            
+
         </script>
+        
+        
     </body>
 </html>
