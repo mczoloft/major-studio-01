@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <title>+++</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Merriweather|Open+Sans|Oswald" rel="stylesheet">
+    <style type="text/css">
+    body {
+        font-family: 'Open Sans';
+        padding: 0px;
+        margin: 50px 0px 0px 0px;
+    }    
+    #main-content {
+        position: absolute;
+        width: 800px;
+        background-color: white;
+        margin: auto;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: left;
+    }
+    #viz1,#viz2,#viz3,#viz4,#viz5  {
+        width: 800px;
+        height: auto;
+        overflow: auto;
+        text-align: center;
+        box-sizing: border-box;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 30px;
+        background-color: #f4f1ef;
+        /*border: 1px dashed #f94107;*/
+    }
+    h1 {
+        font-family: Georgia;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 0.75px;
+        text-align: center;
+        color: #2164ff;
+    }
+    h2 {
+        font-family: Georgia;
+        font-weight: 100;
+        font-size: 20px;
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: #2164ff;
+    }
+    h3 {
+        font-family: Georgia;
+        font-weight: 100;
+        font-size: 17px;
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: #2164ff;
+    }
+    .intro_context {
+        padding-bottom: 15px;
+        border-bottom: 1px dashed lightgrey;
+        color: #A0A0A0;
+    }
+    .words {
+        display: inline-block;
+        margin-bottom: 2px;
+        margin-right: 2px;
+        color: white;
+        background-color: #f94107;
+        font-family: 'Oswald';
+        text-transform: Uppercase;
+    }
+    .highlight {
+       color: #2164ff;
+       font-weight: 700;
+    } 
+    .descriptive {
+        font-family: 'Fira Mono';
+        color: grey;
+        font-size: 12px;
+        margin-top: 15px;
+        border-top: 1px dashed lightgrey;
+        margin-bottom: 15px;
+        border-bottom: 1px dashed lightgrey;
+        position: fixed;
+        left: 50px;
+        width: 145px;
+        text-align: right;
+        top: 587px;
+    }
+    .Bet5_10,.Bet11_25,.Bet26_50,.Upper50 {
+        font-family: 'Oswald';
+        display: inline-block;
+        background-color: #ffded5;
+        color: white;
+        padding: 5px;
+        text-transform: uppercase;
+        letter-spacing: 0.4;
+        background-color: #f94107;
+    }
+    .Bet5_10 {
+        opacity: 0.25;
+    }
+    .Bet11_25 {
+        opacity: 0.5;
+    }
+    .Bet26_50 {
+        opacity: 0.75;
+    }
+    .Upper50 {
+        opacity: 1;
+    }
+    </style>
+
+    </head>
+
+    <body>
+        <div class='descriptive'>
+            <p>How to read the colors</p>
+            <p><span class='Upper50'>More than 50 times</span><br><span class='Bet26_50'>Between 50 to 26 times</span><br><span class='Bet11_25'>Between 25 to 11 times</span><span class='Bet5_10'>Between 10 to 5 times</span></p>
+        </div>
+       
+        <div id='main-content'>
+       
+        <!--Intro and context for the project-->
+        <div class='intro_context'><br><br>
+        <h1>What is this corpus<br>all about?</h1>
+        <p>UN has developed a report on how to tacke inequality in SubSaharan Africa. The geographical focus is peculiar, but it serves
+        a purpose: most of the countries on that region are the ones leading the GINI ranking on inequality. The report is divided into several chapters, each one dealing with specific themes and problems within economic and socio-politic issues and boundaries.</p>
+        <p>The fifth chapter provides us with two difficult tasks. <span class='highlight'>1. How to develop a better economical model</span> for the selected countries regarding the scope and complexity of their companies and assets. <span class='highlight'>2. And how to parse this information</span> into guidelines and polices.</p>
+        <p>To get a better understanding, we can break this document into its subchapters and try to understand the terms, as a way to insert us into complex methodologies and graphs.</p>
+        <p><h2>How this work was done</h2></p>
+        <p>Each word in these word bubbles was sized to its frequency in each paragraph. Their colors show in which range they fall. Common words such as pronoums and articles, and also years/reference numbers, were removed with Javascript. The visualization was rendered with D3.</p>
+        </div>
+
+        <div class='intro_context'><br>
+            <span class='highlight'>5.1 Intro</span>
+            It's a small text detailing 
+        <div id='viz1'></div>
+        </div>
+        
+        <div class='intro_context'><br>
+            <span class='highlight'>5.2 Evidence of structural transformation in Africa</span>
+            It's a small text detailing 
+            <div id='viz2'></div>
+        </div>
+        
+        <div class='intro_context'><br>
+            <span class='highlight'>5.3 Methodology and data description</span>
+            It's a small text detailing 
+            <div id='viz3'></div>
+        </div>
+        
+        <div class='intro_context'><br>
+            <span class='highlight'>5.4 Estimating the determinants of Africa’s manufacturing performance</span>
+            It's a small text detailing 
+            <div id='viz4'></div>
+        </div>
+        
+        <div class='intro_context'><br>
+            <span class='highlight'>5.5 Conclusions and policy recommendations</span>
+            It's a small text detailing 
+            <div id='viz5'></div>
+        </div>
+       
+        </div> <!--main-content end here-->
+        <script src="script.js"></script>
+
+    </body>
+</html>
