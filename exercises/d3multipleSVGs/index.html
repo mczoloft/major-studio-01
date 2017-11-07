@@ -18,11 +18,6 @@
             text-anchor: middle;
             text-size: 0.5em;
         }
-        
-         text.label2 {
-            text-anchor: middle;
-            text-size: 0.2em;
-        }
     </style>
     <body>
         <script>
@@ -36,9 +31,7 @@
                 var mapX = d3.scaleLinear()
                     .domain([0, 24])
                     .range([10, 390]);
-                    
-                    
-
+                console.log(data);
                 data.forEach(function(d) {
                     for (var col = 0; col < 24; col++) {
                         var val = Object.keys(d)[col];
@@ -67,7 +60,7 @@
                                 .append('text')
                                     .attr('x', 10)
                                     .attr('y', 25)
-                                    .text(function() { return d['Country Name']; });
+                                    .text(function() { return d['Country Name']; })
                             // each column
                             for (var col = 0; col < 24; col++) {
                                 d3.select(this)
@@ -76,7 +69,7 @@
                                         .attr('x', function() { return mapX(col); })
                                         .attr('y', function() { return mapY(d[Object.keys(d)[col]]); })
                                         .attr('visibility', 'hidden')
-                                        .text(function() { return d[Object.keys(d)[col]]; })
+                                        .text(function() { return d[Object.keys(d)[col]]; });
 
                                 d3.select(this)
                                     .append('circle') // add dom element svg circle
@@ -86,16 +79,12 @@
                                     .on('mouseover', function() {
                                         d3.select(this)
                                             .style('fill', 'white');
-                                    })
-                                    .on('mouseout', function() {
-                                        d3.select(this)
-                                            .style('fill', 'black');
                                     });
 
                             }
                         })
                         .on('mouseover', function() {
-                            d3.select(this).selectAll('text').attr('visibility', 'visible');
+                            d3.selectAll('text').attr('visibility', 'visible');
                         })
                         .on('mouseout', function() {
                             d3.select(this).selectAll('text.label').attr('visibility', 'hidden');
