@@ -1,6 +1,6 @@
 var CountryData = [];
 
-d3.json('_Assets/CountryData.json', function(error, data) {
+d3.json('CountryData.json', function(error, data) {
     if (error) throw error;
 
     CountryData.push(data);
