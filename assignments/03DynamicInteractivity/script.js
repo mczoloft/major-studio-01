@@ -33,7 +33,7 @@ d3.json('CountryData.json', function(error, data) {
                 .attr("x2", 250)
                 .attr("y2", function (d) {return yScale2(d.GDP_change_2016)})
                 .attr("stroke-width", 1)
-                // .style('opacity', 0.3)
+                .style('opacity', 0.3)
                 .attr("stroke", "black");
 
         svg.selectAll("line#second")
@@ -46,6 +46,7 @@ d3.json('CountryData.json', function(error, data) {
                 .attr("x2", 500)
                 .attr("y2", function (d) {return yScale3(d.Gini)})
                 .attr("stroke-width", 1)
+                .style('opacity', 0.3)
                 .attr("stroke", "violet");
                 // .style('opacity', 0.3);
                 
