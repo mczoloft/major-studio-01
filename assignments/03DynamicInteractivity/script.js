@@ -50,7 +50,7 @@ d3.json('CountryData.json', function(error, data) {
                 // .style('opacity', 0.3);
                 
                 
-        svg.selectAll("text")
+        svg.selectAll("text.labels")
         .data(data)
             .enter()
             .append("text")
@@ -60,6 +60,8 @@ d3.json('CountryData.json', function(error, data) {
                 .attr("y", function (d) {return yScale1(d.eci_value)})
                 // .style('opacity', 0.3)
                 .attr("visibility", "visible");
+                
+        
                 
         // svg.selectAll("#first, #second, .labels")
         // .on('mouseon', function() {
