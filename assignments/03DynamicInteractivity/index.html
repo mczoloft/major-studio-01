@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-path.v1.min.js"></script>
+    <link rel='stylesheet' href='bootstrap.min.css'>
+    <title>+++</title>
+    <link href="https://fonts.googleapis.com/css?family=Eczar:400,800|Rubik:300,300i,400,400i,700,700i" rel="stylesheet">    <style type="text/css">
+    body {
+        font-family: 'Rubik';
+        color: black;
+        padding: 0px;
+        margin: 30px 0px 0px 0px;
+    }
+    #first {
+        stroke-width: 1px;
+        stroke: black;
+    }
+    #main-content {
+        position: absolute;
+        width: 600px;
+        background-color: white;
+        margin: auto;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: left;
+        letter-spacing: 0.2px;
+    }
+    #viz1,#viz2,#viz3,#viz4,#viz5  {
+        width: 600px;
+        height: 900px;
+        overflow: auto;
+        text-align: center;
+        box-sizing: border-box;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 30px;
+        border: 1px dotted lightgrey;
+    }
+    h1 {
+        font-family: 'Eczar';
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 40px;
+        letter-spacing: 0.75px;
+        text-align: left;
+        color: violet;
+    }
+    h2 {
+        font-family: 'Eczar';
+        font-weight: 100;
+        font-size: 20px;
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: violet;
+    }
+    h3 {
+        font-family: 'Eczar';
+        font-weight: 100;
+        font-size: 17px;
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: violet;
+    }
+    .intro_context {
+        padding-bottom: 15px;
+        border-bottom: 1px dashed lightgrey;
+        color: black;
+    }
+    .labels {
+        display: inline-block;
+        margin-bottom: 2px;
+        margin-right: 2px;
+        color: black;
+        background-color: lightgrey;
+        font-family: 'Rubik';
+        font-size: 9px;
+        letter-spacing: 1px;
+        text-transform: Uppercase;
+        text-align: right; 
+    }
+    .highlight {
+       color: violet;
+       font-weight: 700;
+    } 
+    .descriptive {
+        font-family: 'Rubik';
+        color: grey;
+        font-size: 12px;
+        margin-top: 15px;
+        border-top: 1px dashed lightgrey;
+        margin-bottom: 15px;
+        border-bottom: 1px dashed lightgrey;
+        position: fixed;
+        left: 50px;
+        width: 145px;
+        text-align: right;
+        top: 175px;
+    }
+
+    a {
+        color: violet;
+    }
+
+    </style>
+
+    </head>
+
+    <body>
+        <!--<div class='descriptive'>-->
+        <!--    <p>How to read the colors</p>-->
+        <!--    <p><span class='Upper50'>More than 50 times</span><br><span class='Bet26_50'>Between 50 to 26 times</span><br><span class='Bet11_25'>Between 25 to 11 times</span><span class='Bet5_10'>Between 10 to 5 times</span></p>-->
+        <!--</div>-->
+       
+        <div id='main-content'>
+       
+        <!--Intro and context for the project-->
+        <div class='intro_context'><br><br>
+        <h1>The new normal</h1>
+        <p>We now try to look into other variables against the ECI; the GDP per capita change from last year, and the GINI. All of them are from 2016.</p>
+        <p><h2>How this work was done</h2></p>
+        <p>The slopegraph has 3 steps; 1st, the ECI; 2nd, GDP changes per capita; 3rd, GINI. The vertical position of the corners of each line was normalized to the axis height. The visualization was rendered with D3.<br><br>
+        More info here: <a href='https://github.com/mczoloft/major-studio-01/tree/master/assignments/03DynamicInteractivity'>GitHub</a></p>
+        </div>
+
+        <div id='viz1'></div>
+        </div>
+        
+ 
+       
+        </div> <!--main-content end here-->
+        <script src="script.js"></script>
+
+    </body>
+</html>
