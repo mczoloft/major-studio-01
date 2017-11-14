@@ -22,7 +22,7 @@ d3.json('CountryData.json', function(error, data) {
     var yScale3 = d3.scaleLinear()
     .domain([d3.min(data, function (d) { return d.Gini}), d3.max(data, function(d) { return d.Gini; })])
     .range([820, 0]);
-
+    
         svg.selectAll('line#first')
         .data(data)
             .enter()
@@ -59,18 +59,26 @@ d3.json('CountryData.json', function(error, data) {
                 .text(function (d) {return d.country_eci})
                 .attr("x", 2)
                 .attr("y", function (d) {return yScale1(d.eci_value)})
-                // .style('opacity', 0.3)
+                .style('opacity', 0.3)
                 .attr("visibility", "visible");
                 
         
                 
-        // svg.selectAll("#first, #second, .labels")
-        // .on('mouseon', function() {
-        //           d3.select(this).attr("visibility", "visible").style('opacity', 1); 
-        //         })
-        //         .on('mouseover', function() {
-        //           d3.select(this).style('opacity', 0.3).attr('visibility', "inherit"); 
-        //         });
+        svg.selectAll(".labels")
+        .on('mouseon', function() {
+                  d3.select(this).attr("visibility", "visible").style('opacity', 1); 
+                })
+                .on('mouseover', function() {
+                  d3.select(this).style('opacity', 1).attr('visibility', "inherit"); 
+                });
+                
+        svg.selectAll("line")
+        .on('mouseon', function() {
+                  d3.select(this).attr("visibility", "visible").style('opacity', 1); 
+                })
+                .on('mouseover', function() {
+                  d3.select(this).style('opacity', 1).attr('visibility', "inherit"); 
+                });
 
 
     

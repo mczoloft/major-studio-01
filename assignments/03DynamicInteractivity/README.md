@@ -31,13 +31,6 @@ This is simpler and close to what UNDP saw as interesting. We try to plot the da
 ![alt text](https://raw.githubusercontent.com/mczoloft/major-studio-01/2d6901dc02a109b16b450f8d22e6e615a58f23a8/assignments/03DynamicInteractivity/_Assets/sketch3.jpg 'Sketch 3')
 Here we try a mash-up: we use a scatterplot and also a slopegraph. The idea is to map the first and the last ECI logged for each Country, and connect them with a line. This line could, them, inherit graphical styles mapped by the other two variables (GINI and GDP per capita). Needs more sketching, but has the benefit of bringing also time into the analysis.
 
-Here's a summary of these sketches
-| Sketches        | Advantages  | Disadvantages  |
-| ------------- |-------------| -----|
-| #1      | right-aligned | $1600 |
-| #2      | right-aligned | $1600 |
-| #3      | right-aligned | $1600 |
-
 ## Prototyping and development
 
 #### Structure and visuals
