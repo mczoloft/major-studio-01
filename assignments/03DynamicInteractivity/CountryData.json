@@ -1,12 +1,5 @@
 [
   {
-    "country_eci": "Albania",
-    "eci_value": -0.5095999837,
-    "Gini": 29,
-    "Year_GINI": 2012,
-    "GDP_change_2016": 3.62554457
-  },
-  {
     "country_eci": "Algeria",
     "eci_value": -0.8565999866,
     "Gini": 27.6,
@@ -21,88 +14,11 @@
     "GDP_change_2016": -3.3115006
   },
   {
-    "country_eci": "Argentina",
-    "eci_value": -0.1259000003,
-    "Gini": 42.7,
-    "Year_GINI": 2014,
-    "GDP_change_2016": -3.255565152
-  },
-  {
-    "country_eci": "Australia",
-    "eci_value": -0.235799998,
-    "Gini": 34.9,
-    "Year_GINI": 2010,
-    "GDP_change_2016": 1.326879
-  },
-  {
-    "country_eci": "Austria",
-    "eci_value": 1.665099978,
-    "Gini": 30.5,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 0.1559897923
-  },
-  {
-    "country_eci": "Azerbaijan",
-    "eci_value": -1.108899951,
-    "Gini": 31.8,
-    "Year_GINI": 2008,
-    "GDP_change_2016": -4.22096932
-  },
-  {
-    "country_eci": "Bangladesh",
-    "eci_value": -1.197999954,
-    "Gini": 32,
-    "Year_GINI": 2010,
-    "GDP_change_2016": 5.962713126
-  },
-  {
-    "country_eci": "Belarus",
-    "eci_value": 0.7591999769,
-    "Gini": 26.7,
-    "Year_GINI": 2015,
-    "GDP_change_2016": -2.82827485
-  },
-  {
-    "country_eci": "Belgium",
-    "eci_value": 1.175400019,
-    "Gini": 28.1,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 0.5334413506
-  },
-  {
-    "country_eci": "Bosnia and Herzegovina",
-    "eci_value": 0.5152000189,
-    "Gini": 33.1,
-    "Year_GINI": 2007,
-    "GDP_change_2016": 2.542874074
-  },
-  {
     "country_eci": "Botswana",
     "eci_value": -0.2459000051,
     "Gini": 60.5,
     "Year_GINI": 2009,
     "GDP_change_2016": 1.022269116
-  },
-  {
-    "country_eci": "Brazil",
-    "eci_value": 0.1523000002,
-    "Gini": 51.3,
-    "Year_GINI": 2015,
-    "GDP_change_2016": -4.379692823
-  },
-  {
-    "country_eci": "Bulgaria",
-    "eci_value": 0.5731999874,
-    "Gini": 37.4,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 4.170609768
-  },
-  {
-    "country_eci": "Cambodia",
-    "eci_value": -0.7146999836,
-    "Gini": 30.8,
-    "Year_GINI": 2012,
-    "GDP_change_2016": 5.223062236
   },
   {
     "country_eci": "Cameroon",
@@ -112,109 +28,11 @@
     "GDP_change_2016": 1.829610466
   },
   {
-    "country_eci": "Canada",
-    "eci_value": 0.6823999882,
-    "Gini": 34,
-    "Year_GINI": 2013,
-    "GDP_change_2016": 0.2434847871
-  },
-  {
-    "country_eci": "Chile",
-    "eci_value": -0.2348999977,
-    "Gini": 47.7,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 0.7547842867
-  },
-  {
-    "country_eci": "China",
-    "eci_value": 0.9411000013,
-    "Gini": 42.2,
-    "Year_GINI": 2012,
-    "GDP_change_2016": 6.123803818
-  },
-  {
-    "country_eci": "Colombia",
-    "eci_value": -0.01999999955,
-    "Gini": 51.1,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 1.069985442
-  },
-  {
-    "country_eci": "Costa Rica",
-    "eci_value": 0.2811999917,
-    "Gini": 48.2,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 3.267258975
-  },
-  {
-    "country_eci": "Croatia",
-    "eci_value": 0.8944000006,
-    "Gini": 32.2,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 3.743817658
-  },
-  {
-    "country_eci": "Czech Republic",
-    "eci_value": 1.693699956,
-    "Gini": 25.9,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 2.274997368
-  },
-  {
-    "country_eci": "Denmark",
-    "eci_value": 1.176900029,
-    "Gini": 28.5,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 0.4456975466
-  },
-  {
-    "country_eci": "Dominican Republic",
-    "eci_value": -0.4339999855,
-    "Gini": 44.9,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 5.439550703
-  },
-  {
-    "country_eci": "Ecuador",
-    "eci_value": -1.156399965,
-    "Gini": 46.5,
-    "Year_GINI": 2015,
-    "GDP_change_2016": -2.914961487
-  },
-  {
-    "country_eci": "El Salvador",
-    "eci_value": 0.05139999837,
-    "Gini": 40.8,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 1.846230358
-  },
-  {
-    "country_eci": "Estonia",
-    "eci_value": 1.071099997,
-    "Gini": 34.6,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 1.487431326
-  },
-  {
     "country_eci": "Ethiopia",
     "eci_value": -1.141800046,
     "Gini": 33.2,
     "Year_GINI": 2010,
     "GDP_change_2016": 4.90414649
-  },
-  {
-    "country_eci": "Finland",
-    "eci_value": 1.550099969,
-    "Gini": 26.8,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 1.100117803
-  },
-  {
-    "country_eci": "France",
-    "eci_value": 1.363499999,
-    "Gini": 32.3,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 0.7761587416
   },
   {
     "country_eci": "Gabon",
@@ -224,144 +42,11 @@
     "GDP_change_2016": -0.3005664242
   },
   {
-    "country_eci": "Georgia",
-    "eci_value": -0.2707000077,
-    "Gini": 38.5,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 2.683238654
-  },
-  {
-    "country_eci": "Germany",
-    "eci_value": 1.989500046,
-    "Gini": 31.4,
-    "Year_GINI": 2013,
-    "GDP_change_2016": 0.6583297239
-  },
-  {
     "country_eci": "Ghana",
     "eci_value": -1.253900051,
     "Gini": 42.8,
     "Year_GINI": 2006,
     "GDP_change_2016": 1.28562756
-  },
-  {
-    "country_eci": "Greece",
-    "eci_value": 0.1978999972,
-    "Gini": 35.8,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 0.7017446831
-  },
-  {
-    "country_eci": "Guatemala",
-    "eci_value": -0.5605000257,
-    "Gini": 48.7,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 1.01538774
-  },
-  {
-    "country_eci": "Guinea",
-    "eci_value": -2.156699896,
-    "Gini": 33.7,
-    "Year_GINI": 2012,
-    "GDP_change_2016": 2.6167361
-  },
-  {
-    "country_eci": "Honduras",
-    "eci_value": -0.7526000142,
-    "Gini": 50.1,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 1.880914685
-  },
-  {
-    "country_eci": "Hungary",
-    "eci_value": 1.38499999,
-    "Gini": 30.9,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 2.214708195
-  },
-  {
-    "country_eci": "India",
-    "eci_value": 0.2606000006,
-    "Gini": 35.1,
-    "Year_GINI": 2011,
-    "GDP_change_2016": 5.884249196
-  },
-  {
-    "country_eci": "Indonesia",
-    "eci_value": -0.306400001,
-    "Gini": 39.5,
-    "Year_GINI": 2013,
-    "GDP_change_2016": 3.82778128
-  },
-  {
-    "country_eci": "Ireland",
-    "eci_value": 1.431800008,
-    "Gini": 31.9,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 3.091877222
-  },
-  {
-    "country_eci": "Israel",
-    "eci_value": 1.304200053,
-    "Gini": 42.8,
-    "Year_GINI": 2010,
-    "GDP_change_2016": 2.008088383
-  },
-  {
-    "country_eci": "Italy",
-    "eci_value": 1.238100052,
-    "Gini": 34.7,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 1.096284131
-  },
-  {
-    "country_eci": "Jamaica",
-    "eci_value": -0.293599993,
-    "Gini": 45.5,
-    "Year_GINI": 2004,
-    "GDP_change_2016": 1.043585451
-  },
-  {
-    "country_eci": "Japan",
-    "eci_value": 2.2572999,
-    "Gini": 32.1,
-    "Year_GINI": 2008,
-    "GDP_change_2016": 1.115023301
-  },
-  {
-    "country_eci": "Jordan",
-    "eci_value": -0.4045999944,
-    "Gini": 35.4,
-    "Year_GINI": 2010,
-    "GDP_change_2016": -1.195127574
-  },
-  {
-    "country_eci": "Kazakhstan",
-    "eci_value": -0.1601999998,
-    "Gini": 26.5,
-    "Year_GINI": 2015,
-    "GDP_change_2016": -0.435267746
-  },
-  {
-    "country_eci": "Kenya",
-    "eci_value": -0.8945999742,
-    "Gini": 47.7,
-    "Year_GINI": 2005,
-    "GDP_change_2016": 3.172375167
-  },
-  {
-    "country_eci": "Latvia",
-    "eci_value": 0.6755999923,
-    "Gini": 35.1,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 2.83979417
-  },
-  {
-    "country_eci": "Lithuania",
-    "eci_value": 0.8370000124,
-    "Gini": 37.7,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 3.460341795
   },
   {
     "country_eci": "Madagascar",
@@ -376,13 +61,6 @@
     "Gini": 46.1,
     "Year_GINI": 2010,
     "GDP_change_2016": -0.4346101687
-  },
-  {
-    "country_eci": "Malaysia",
-    "eci_value": 0.8191000223,
-    "Gini": 46.3,
-    "Year_GINI": 2009,
-    "GDP_change_2016": 2.687730479
   },
   {
     "country_eci": "Mali",
@@ -406,20 +84,6 @@
     "GDP_change_2016": 3.628758588
   },
   {
-    "country_eci": "Mexico",
-    "eci_value": 0.9786000252,
-    "Gini": 48.2,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 0.9796296292
-  },
-  {
-    "country_eci": "Mongolia",
-    "eci_value": -1.113999963,
-    "Gini": 32,
-    "Year_GINI": 2015,
-    "GDP_change_2016": -0.70941376
-  },
-  {
     "country_eci": "Morocco",
     "eci_value": -0.7749000192,
     "Gini": 40.7,
@@ -441,102 +105,11 @@
     "GDP_change_2016": -1.010006723
   },
   {
-    "country_eci": "Netherlands",
-    "eci_value": 1.103800058,
-    "Gini": 28.6,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 1.670754105
-  },
-  {
-    "country_eci": "New Zealand",
-    "eci_value": 0.306400001,
-    "Gini": 36.2,
-    "Year_GINI": 1997,
-    "GDP_change_2016": 1.797543465
-  },
-  {
-    "country_eci": "Nicaragua",
-    "eci_value": -1.193199992,
-    "Gini": 46.6,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 3.546306542
-  },
-  {
     "country_eci": "Nigeria",
     "eci_value": -2.250099897,
     "Gini": 43,
     "Year_GINI": 2009,
     "GDP_change_2016": -4.086254022
-  },
-  {
-    "country_eci": "Norway",
-    "eci_value": 0.9472000003,
-    "Gini": 26.8,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 0.2218660897
-  },
-  {
-    "country_eci": "Pakistan",
-    "eci_value": -0.6912000179,
-    "Gini": 30.7,
-    "Year_GINI": 2013,
-    "GDP_change_2016": 3.648702472
-  },
-  {
-    "country_eci": "Paraguay",
-    "eci_value": -0.5774000287,
-    "Gini": 48,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 2.75855866
-  },
-  {
-    "country_eci": "Peru",
-    "eci_value": -0.8438000083,
-    "Gini": 44.3,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 2.583981934
-  },
-  {
-    "country_eci": "Philippines",
-    "eci_value": 0.4171000123,
-    "Gini": 40.1,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 5.264094254
-  },
-  {
-    "country_eci": "Poland",
-    "eci_value": 1.120300055,
-    "Gini": 32.1,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 2.782567943
-  },
-  {
-    "country_eci": "Portugal",
-    "eci_value": 0.5586000085,
-    "Gini": 35.6,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 1.727223116
-  },
-  {
-    "country_eci": "Qatar",
-    "eci_value": -0.3201999962,
-    "Gini": 41.1,
-    "Year_GINI": 2007,
-    "GDP_change_2016": -1.2811152
-  },
-  {
-    "country_eci": "Romania",
-    "eci_value": 1.024799943,
-    "Gini": 27.5,
-    "Year_GINI": 2013,
-    "GDP_change_2016": 5.404288453
-  },
-  {
-    "country_eci": "Saudi Arabia",
-    "eci_value": 0.2014999986,
-    "Gini": 45.9,
-    "Year_GINI": 2013,
-    "GDP_change_2016": -0.5235082086
   },
   {
     "country_eci": "Senegal",
@@ -546,74 +119,11 @@
     "GDP_change_2016": 3.641924904
   },
   {
-    "country_eci": "Serbia",
-    "eci_value": 0.581099987,
-    "Gini": 29.1,
-    "Year_GINI": 2013,
-    "GDP_change_2016": 3.331754464
-  },
-  {
-    "country_eci": "Slovenia",
-    "eci_value": 1.478299975,
-    "Gini": 25.7,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 2.426705613
-  },
-  {
     "country_eci": "South Africa",
     "eci_value": 0.1647000015,
     "Gini": 63.4,
     "Year_GINI": 2011,
     "GDP_change_2016": -1.32932099
-  },
-  {
-    "country_eci": "Spain",
-    "eci_value": 0.7731999755,
-    "Gini": 36,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 3.244061909
-  },
-  {
-    "country_eci": "Sri Lanka",
-    "eci_value": -0.5990999937,
-    "Gini": 38.6,
-    "Year_GINI": 2012,
-    "GDP_change_2016": 3.212962381
-  },
-  {
-    "country_eci": "Sweden",
-    "eci_value": 1.685199976,
-    "Gini": 27.2,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 2.094856118
-  },
-  {
-    "country_eci": "Switzerland",
-    "eci_value": 2.181400061,
-    "Gini": 32.5,
-    "Year_GINI": 2013,
-    "GDP_change_2016": 0.2022166473
-  },
-  {
-    "country_eci": "Tajikistan",
-    "eci_value": -1.280099988,
-    "Gini": 34,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 4.620026413
-  },
-  {
-    "country_eci": "Thailand",
-    "eci_value": 0.7458000183,
-    "Gini": 37.8,
-    "Year_GINI": 2013,
-    "GDP_change_2016": 2.921285042
-  },
-  {
-    "country_eci": "Trinidad and Tobago",
-    "eci_value": -0.07460000366,
-    "Gini": 40.3,
-    "Year_GINI": 1992,
-    "GDP_change_2016": -5.448571658
   },
   {
     "country_eci": "Tunisia",
@@ -623,20 +133,6 @@
     "GDP_change_2016": 0.02007149685
   },
   {
-    "country_eci": "Turkey",
-    "eci_value": 0.4241999984,
-    "Gini": 41.2,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 1.270813788
-  },
-  {
-    "country_eci": "Turkmenistan",
-    "eci_value": -1.380800009,
-    "Gini": 43.2,
-    "Year_GINI": 2011,
-    "GDP_change_2016": 4.375906095
-  },
-  {
     "country_eci": "Uganda",
     "eci_value": -1.189800024,
     "Gini": 42.4,
@@ -644,53 +140,11 @@
     "GDP_change_2016": 1.259752037
   },
   {
-    "country_eci": "Ukraine",
-    "eci_value": 0.4778000116,
-    "Gini": 25.5,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 2.720932078
-  },
-  {
-    "country_eci": "Uruguay",
-    "eci_value": 0.2032999992,
-    "Gini": 41.7,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 1.086561917
-  },
-  {
-    "country_eci": "Uzbekistan",
-    "eci_value": -0.8058000207,
-    "Gini": 36.7,
-    "Year_GINI": 2003,
-    "GDP_change_2016": 5.940725694
-  },
-  {
-    "country_eci": "Vietnam",
-    "eci_value": -0.2773000002,
-    "Gini": 34.8,
-    "Year_GINI": 2014,
-    "GDP_change_2016": 5.079055521
-  },
-  {
     "country_eci": "Zambia",
     "eci_value": -1.013299942,
     "Gini": 57.1,
     "Year_GINI": 2015,
     "GDP_change_2016": 0.2442011851
-  },
-  {
-    "country_eci": "Zambia",
-    "eci_value": -1.013299942,
-    "Gini": 57.1,
-    "Year_GINI": 2015,
-    "GDP_change_2016": 0.2442011851
-  },
-  {
-    "country_eci": "Zimbabwe",
-    "eci_value": -0.918200016,
-    "Gini": 43.2,
-    "Year_GINI": 2011,
-    "GDP_change_2016": -1.631098826
   },
   {
     "country_eci": "Zimbabwe",

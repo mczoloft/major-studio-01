@@ -34,11 +34,8 @@ Here we try a mash-up: we use a scatterplot and also a slopegraph. The idea is t
 ## Prototyping and development
 
 #### Structure and visuals
-Dummy text
-
-#### Interactivity
-Dummy text
+I've decided to use the slope idea from the last iteration; with 3 axes defined by each index.
 
 ## Data specifications and practices
 
-Here is what I did with the data (modelling and database); what are the sources and how to get from there to the question.
+I took three different CSVs and merged them with Google Fusion; then converted them to JSON format with csvjson.com.

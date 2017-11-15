@@ -9,7 +9,7 @@ d3.json('CountryData.json', function(error, data) {
     var svg = d3.select('#viz1')
     .append('svg')
     .attr('width', 450)
-    .attr('height', 820);
+    .attr('height', 840);
     
     var yScale1 = d3.scaleLinear()
     .domain([d3.min(data, function (d) { return d.eci_value}), d3.max(data, function(d) { return d.eci_value; })])
@@ -29,12 +29,11 @@ d3.json('CountryData.json', function(error, data) {
             .append("line")
                 .attr("x1", 0)
                 .attr("id", '#first')
-                .attr("y1", function (d) {return yScale1(d.eci_value)})
-                .attr("x2", 250)
-                .attr("y2", function (d) {return yScale2(d.GDP_change_2016)})
+                .attr("y1", function (d) {return yScale2(d.GDP_change_2016)})
+                .attr("x2", 200)
+                .attr("y2", function (d) {return yScale1(d.eci_value)})
                 .attr("stroke-width", 1)
-                .style('opacity', 0.3)
-                .attr("stroke", "black");
+                .attr("stroke", "violet");
 
         svg.selectAll("line#second")
         .data(data)
@@ -42,43 +41,43 @@ d3.json('CountryData.json', function(error, data) {
             .append("line")
                 .attr("x1", 250)
                 .attr("id", '#second')
-                .attr("y1", function (d) {return yScale2(d.GDP_change_2016)})
+                .attr("y1", function (d) {return yScale1(d.eci_value)})
                 .attr("x2", 500)
                 .attr("y2", function (d) {return yScale3(d.Gini)})
                 .attr("stroke-width", 1)
-                .style('opacity', 0.3)
                 .attr("stroke", "violet");
-                // .style('opacity', 0.3);
-                
-                
+
         svg.selectAll("text.labels")
         .data(data)
             .enter()
             .append("text")
                 .attr("class", "labels")
                 .text(function (d) {return d.country_eci})
-                .attr("x", 2)
-                .attr("y", function (d) {return yScale1(d.eci_value)})
-                .style('opacity', 0.3)
+                .attr("x", 225)
+                .attr("y", function (d) {return yScale1(d.eci_value)+7})
+                .attr('text-anchor', 'middle')
                 .attr("visibility", "visible");
+
+        // svg.selectAll(".labels")
+        // .on('mouseon', function() {
+        //           d3.select(this)
+        //           .append("text.new")
+        //           .text(function (d) {return d.eci_value})
+        //           .attr("visibility", "visible").style('opacity', 1)
+        //           .attr("x", 0)
+        //           .attr("y", function (d) {return yScale2(d.GDP_change_2016)+7}); 
+        //         })
+        //         .on('mouseout', function() {
+        //           d3.select(this).style('opacity', 1).attr('visibility', "inherit"); 
+        //         });
                 
-        
-                
-        svg.selectAll(".labels")
-        .on('mouseon', function() {
-                  d3.select(this).attr("visibility", "visible").style('opacity', 1); 
-                })
-                .on('mouseover', function() {
-                  d3.select(this).style('opacity', 1).attr('visibility', "inherit"); 
-                });
-                
-        svg.selectAll("line")
-        .on('mouseon', function() {
-                  d3.select(this).attr("visibility", "visible").style('opacity', 1); 
-                })
-                .on('mouseover', function() {
-                  d3.select(this).style('opacity', 1).attr('visibility', "inherit"); 
-                });
+        // svg.selectAll("line")
+        // .on('mouseon', function() {
+        //           d3.select(this).attr("visibility", "visible").style('opacity', 1); 
+        //         })
+        //         .on('mouseover', function() {
+        //           d3.select(this).style('opacity', 1).attr('visibility', "inherit"); 
+        //         });
 
 
     
