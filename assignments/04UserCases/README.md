@@ -3,4 +3,5 @@
 This is the methodology and sources behind this visualisation project.
 
 #### Sketch for the project
-![alt text](sketch.jpg 'Sketch 2')(https://mczoloft.github.io/major-studio-01/assignments/04UserCases/)
+![alt text](sketch.jpg 'Sketch 2')
+https://mczoloft.github.io/major-studio-01/assignments/04UserCases/
