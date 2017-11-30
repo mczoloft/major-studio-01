@@ -1,0 +1,156 @@
+[
+  {
+    "country_eci": "Algeria",
+    "eci_value": -0.8565999866,
+    "Gini": 27.6,
+    "Year_GINI": 2011,
+    "GDP_change_2016": 1.824167826
+  },
+  {
+    "country_eci": "Angola",
+    "eci_value": -1.193199992,
+    "Gini": 42.7,
+    "Year_GINI": 2008,
+    "GDP_change_2016": -3.3115006
+  },
+  {
+    "country_eci": "Botswana",
+    "eci_value": -0.2459000051,
+    "Gini": 60.5,
+    "Year_GINI": 2009,
+    "GDP_change_2016": 1.022269116
+  },
+  {
+    "country_eci": "Cameroon",
+    "eci_value": -1.884699941,
+    "Gini": 46.5,
+    "Year_GINI": 2014,
+    "GDP_change_2016": 1.829610466
+  },
+  {
+    "country_eci": "Ethiopia",
+    "eci_value": -1.141800046,
+    "Gini": 33.2,
+    "Year_GINI": 2010,
+    "GDP_change_2016": 4.90414649
+  },
+  {
+    "country_eci": "Gabon",
+    "eci_value": -1.518700004,
+    "Gini": 41.5,
+    "Year_GINI": 2005,
+    "GDP_change_2016": -0.3005664242
+  },
+  {
+    "country_eci": "Ghana",
+    "eci_value": -1.253900051,
+    "Gini": 42.8,
+    "Year_GINI": 2006,
+    "GDP_change_2016": 1.28562756
+  },
+  {
+    "country_eci": "Madagascar",
+    "eci_value": -1.230399966,
+    "Gini": 40.6,
+    "Year_GINI": 2010,
+    "GDP_change_2016": 1.435529791
+  },
+  {
+    "country_eci": "Malawi",
+    "eci_value": -1.596400023,
+    "Gini": 46.1,
+    "Year_GINI": 2010,
+    "GDP_change_2016": -0.4346101687
+  },
+  {
+    "country_eci": "Mali",
+    "eci_value": -0.8231999874,
+    "Gini": 33,
+    "Year_GINI": 2010,
+    "GDP_change_2016": 2.264579459
+  },
+  {
+    "country_eci": "Mauritania",
+    "eci_value": -1.83829999,
+    "Gini": 32.4,
+    "Year_GINI": 2015,
+    "GDP_change_2016": -0.8144625296
+  },
+  {
+    "country_eci": "Mauritius",
+    "eci_value": -0.2159000039,
+    "Gini": 35.8,
+    "Year_GINI": 2012,
+    "GDP_change_2016": 3.628758588
+  },
+  {
+    "country_eci": "Morocco",
+    "eci_value": -0.7749000192,
+    "Gini": 40.7,
+    "Year_GINI": 2007,
+    "GDP_change_2016": -0.2718877789
+  },
+  {
+    "country_eci": "Mozambique",
+    "eci_value": -1.632200003,
+    "Gini": 45.6,
+    "Year_GINI": 2008,
+    "GDP_change_2016": 0.8996228157
+  },
+  {
+    "country_eci": "Namibia",
+    "eci_value": -0.3892999887,
+    "Gini": 61.3,
+    "Year_GINI": 2010,
+    "GDP_change_2016": -1.010006723
+  },
+  {
+    "country_eci": "Nigeria",
+    "eci_value": -2.250099897,
+    "Gini": 43,
+    "Year_GINI": 2009,
+    "GDP_change_2016": -4.086254022
+  },
+  {
+    "country_eci": "Senegal",
+    "eci_value": -0.6423000097,
+    "Gini": 40.3,
+    "Year_GINI": 2011,
+    "GDP_change_2016": 3.641924904
+  },
+  {
+    "country_eci": "South Africa",
+    "eci_value": 0.1647000015,
+    "Gini": 63.4,
+    "Year_GINI": 2011,
+    "GDP_change_2016": -1.32932099
+  },
+  {
+    "country_eci": "Tunisia",
+    "eci_value": 0.1380999982,
+    "Gini": 35.8,
+    "Year_GINI": 2010,
+    "GDP_change_2016": 0.02007149685
+  },
+  {
+    "country_eci": "Uganda",
+    "eci_value": -1.189800024,
+    "Gini": 42.4,
+    "Year_GINI": 2012,
+    "GDP_change_2016": 1.259752037
+  },
+  {
+    "country_eci": "Zambia",
+    "eci_value": -1.013299942,
+    "Gini": 57.1,
+    "Year_GINI": 2015,
+    "GDP_change_2016": 0.2442011851
+  },
+  {
+    "country_eci": "Zimbabwe",
+    "eci_value": -0.918200016,
+    "Gini": 43.2,
+    "Year_GINI": 2011,
+    "GDP_change_2016": -1.631098826
+  }
+]
