@@ -40,9 +40,8 @@ d3.json('CountryData.json', function(error, data) {
                     g.each(function(datum, j) {
                         d3.select(this)
                         .classed('active', i === j ? true : false);
-                        // .select('circle')
-                        // .style('visibility', 'visible');
                     })
+                        
                     
                 });
 
@@ -78,11 +77,11 @@ d3.json('CountryData.json', function(error, data) {
                 .attr("y", function (d) {return yScale1(d.eci_value)+9})
                 .attr('text-anchor', 'middle');
 
-            g.append('circle')
-                        .attr('x', 100)
-                        .attr('y', 100)
-                        .attr('r', function (d) {return d.Gini})
-                        .style('visibility', 'hidden');
+            // g.append('circle')
+            //             .attr('x', 100)
+            //             .attr('y', 100)
+            //             .attr('r', function (d) {return d.Gini})
+            //             .style('visibility', 'hidden');
                         
                       
 
