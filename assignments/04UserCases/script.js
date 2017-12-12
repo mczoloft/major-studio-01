@@ -1,16 +1,22 @@
 var CountryData = [];
 var IndividualDataTest = [12, 15, 20, 29, 80, 70, 90, 10, 22, 03, 30, 40, 55, 56, 12, 07];
 
-d3.json('CountryData.json', function(error, data) {
+d3.json('final.json', function(error, data) {
     if (error) throw error;
 
     CountryData.push(data);
-    console.log(CountryData);
+    
     
     var svg = d3.select('#viz1')
     .append('svg')
     .attr('width', window.innerWidth*0.75)
     .attr('height', window.innerHeight-10);
+    
+    for (var i = CountryData.length; i++; ) {
+        CountryData[i].lastIndex = 10;
+    }
+    
+    console.log(CountryData);
     
     var yScale1 = d3.scaleLinear()
     .domain([d3.min(data, function (d) { return d.eci_value}), d3.max(data, function(d) { return d.eci_value; })])
