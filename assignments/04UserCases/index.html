@@ -5,29 +5,25 @@
     <script src="https://d3js.org/d3-path.v1.min.js"></script>
     <script src="https://d3js.org/d3-shape.v1.min.js"></script>
 
-
-<link href="https://fonts.googleapis.com/css?family=Eczar:400,800|Rubik:300,300i,400,400i,700,700i" rel="stylesheet">
     <style type="text/css">
     body {
-        font-family: 'Rubik';
+        font-family: 'Arial';
         color: black;
         padding: 0px;
-        margin: 0px 0px 0px 0px;
+        margin: 0px;
         font-size: 13px;
         line-height: 20px;
         text-align: left;
-        letter-spacing: 0.2px;
     }
     .first {
-        stroke: red;
+        stroke: #FFA57E;
     }
     .second {
-        stroke: black;
+        stroke: #1C5FF0;
     }
     #main-content {
         position: absolute;
-        width: 100%;
-        height: 100%;
+        width: 1200px;
         background-color: lightgreen;
         margin: auto;
         top: 0px;
@@ -35,8 +31,30 @@
         left: 0px;
         right: 0px;
     }
+    #header {
+        width:100%;
+        border-bottom: 1px;
+    }
+    #titleholder{
+        width: 600px;
+        float: left;
+        text-align: left;
+        box-sizing: border-box;
+        background-color: white;
+        position: fixed;
+    }
+    #smallholder{
+        width: 600px;
+        float: right;
+        text-align: left;
+        box-sizing: border-box;
+        background-color: white;
+        position: fixed;
+        border-bottom: 1px;
+    }
+    
     #viz1 {
-        width: 75%;
+        width: 900px;
         height: 100%;
         overflow: auto;
         float: left;
@@ -46,20 +64,16 @@
         position: fixed;
     }
         #viz2 {
-        width: 25%;
+        width: 300px;
         height: 100%;
         overflow: scroll;
         float: right;
-        text-align: left;
-        font-family: 'Rubik';
-        font-weight: 400;
         box-sizing: border-box;
         padding: 40px;
-        background-color: lightyellow;
+        background-color: #eae8de;
     }
     h1 {
-        font-family: 'Eczar';
-        font-weight: 800;
+        font-family: "Georgia";
         font-size: 50px;
         line-height: 40px;
         letter-spacing: 0.75px;
@@ -67,16 +81,14 @@
         color: black;
     }
     h2 {
-        font-family: 'Eczar';
-        font-weight: 100;
         font-size: 20px;
-        letter-spacing: 0.2px;
+        font-weight: regular;
+        letter-spacing: 2px;
+        text-transform: Uppercase;
         text-align: left;
         color: black;
     }
     h3 {
-        font-family: 'Eczar';
-        font-weight: 100;
         font-size: 17px;
         letter-spacing: 0.2px;
         text-align: left;
@@ -92,22 +104,27 @@
         margin-bottom: 2px;
         margin-right: 2px;
         color: red;
-        font-family: 'Rubik';
-        font-size: 8px;
-        letter-spacing: 1px;
+        font-size: 9px;
+        letter-spacing: 0.5px;
         text-transform: Uppercase;
-        text-decoration: underline 12px;
-        text-align: right; 
-    }
-    .highlight {
-       color: violet;
-       font-weight: 700;
-    }
-    .black{
-        color: black;
+        text-align: center; 
     }
     g {
         opacity: 0.2;
+    }
+    .axis {
+        opacity: 0.4;
+    }
+    .axis text {
+        opacity: 1;
+        fill: black;
+    }
+     .axis g {
+        opacity: 1;
+    }
+     .axis line {
+        stroke-width: 1;
+        stroke: black;
     }
     g.hover {
         opacity: 0.6;
@@ -116,7 +133,7 @@
         opacity: 1;
     }
     line {
-        stroke-width: 2px;
+        stroke-width: 3px;
     }
     </style>
 
@@ -124,6 +141,7 @@
     </head>
     <body>
 
+        <!--<div id='header'></div>-->
         <div id='main-content'>
         <div id='viz1'></div>
         <div id='viz2'><div><h2>Nigeria</h2><br>
