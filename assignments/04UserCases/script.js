@@ -1,11 +1,10 @@
 var CountryData = [];
 var IndividualDataTest = [12, 15, 20, 29, 80, 70, 90, 10, 22, 03, 30, 40, 55, 56, 12, 07];
 
-d3.json('final.json', function(error, data) {
+d3.json('CountryData.json', function(error, data) {
     if (error) throw error;
 
     CountryData.push(data);
-    
     
     var svg = d3.select('#viz1')
     .append('svg')
