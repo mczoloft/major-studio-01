@@ -11,9 +11,6 @@ d3.json('CountryData.json', function(error, data) {
     .attr('width', window.innerWidth*0.75)
     .attr('height', window.innerHeight-10);
     
-    for (var i = CountryData.length; i++; ) {
-        CountryData[i].lastIndex = 10;
-    }
     
     console.log(CountryData);
     
