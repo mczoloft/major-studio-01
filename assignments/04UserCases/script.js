@@ -1,6 +1,12 @@
 var CountryData = [];
+var GDP = new BarChart();
+var ECI = new BarChart();
+var GINI = new BarChart();
+GDP.setup();
+ECI.setup();
+GINI.setup();
 
-d3.json('finalformatArray.json', function(error, data) {
+d3.json('finalformatValues.json', function(error, data) {
     if (error) throw error;
 
     CountryData.push(data);
@@ -15,21 +21,21 @@ d3.json('finalformatArray.json', function(error, data) {
     var yScale1 = d3.scaleLinear()
     // .domain([d3.min(data, function (d) { return d.LastECI}), d3.max(data, function(d) { return d.LastECI; })])
     .domain([-2.3,0.2])
-    .range([700, 30]);
+    .range([750, 100]);
     
-    console.log('maior ECI: ' + d3.max(data, function(d) { return d.LastECI}));
-    console.log('menor ECI: ' + d3.min(data, function(d) { return d.LastECI}));
-    console.log('maior GINI: ' + d3.max(data, function(d) { return d.LastGINI}));
-    console.log('menor GINI: ' + d3.min(data, function(d) { return d.LastGINI}));
+    // console.log('maior ECI: ' + d3.max(data, function(d) { return d.LastECI}));
+    // console.log('menor ECI: ' + d3.min(data, function(d) { return d.LastECI}));
+    // console.log('maior GINI: ' + d3.max(data, function(d) { return d.LastGINI}));
+    // console.log('menor GINI: ' + d3.min(data, function(d) { return d.LastGINI}));
     
     var yScale2 = d3.scaleLog()
     // .domain([d3.min(data, function (d) { return d.LastGDP}), d3.max(data, function(d) { return d.LastGDP; })])
     .domain([100, 10000])
-    .range([700, 30]);
+    .range([750, 100]);
     
     var yScale3 = d3.scaleLinear()
     .domain([65, 30])
-    .range([700, 30]);
+    .range([750, 100]);
     
     var g =  svg.selectAll('g')
             .data(data)
@@ -44,45 +50,25 @@ d3.json('finalformatArray.json', function(error, data) {
                     .classed('hover', false);
                 })
 
-                .on('click', function (d, i){ 
-                    g.each(function(d, j) {
+                .on('click', function (d, i){
+
+                    // Atualiza dado dos 3 BarCharts
+                    GDP.update(d.GDP, true, 'GDP', '#FFA57E');
+                    ECI.update(d.ECI, false, 'ECI', 'black');                    
+                    GINI.update(d.GINI, false, 'GINI', '#1C5FF0');
+
+                    // Função pra apagar todos e ativar só o clicado
+                    g.each(function(datum, j) {
                         d3.select(this)
                         .classed('active', i === j ? true : false);
                         
-                });
-                        console.log(d); 
+                    d3
+                    .select('#viz3')
+                    // .style('background-color', 'red')
+                    .html(d.Country_Name + '<br><small>latest data</small><br><span class="labelgdp">GDP: US$ ' + d.LastGDP + ' </span>   <span class="labeleci">ECI: ' + d.LastECI + '   </span> <span class="labelgini">GINI: ' + d.LastGINI + '</span>')
+                    ;
                         
-                        d3
-                        .select('#viz2')
-                        .style('background-color', '#eae8de')
-                        .html('<h2>' + d.Country_Name + '</h2>')
-                        .append('svg')
-                        .attr('width', 200)
-                        .attr('height', 200)
-                        .append('g')
-                        .attr('class', 'barchart')
-                        .each(function (){
-                            console.log(d);
-                            var chartvalue = [];
-                            chartvalue.push(d.GDP);
-                            
-                            
-                                
-                            d3.select(this)
-                            .selectAll('circle')
-                            .data(chartvalue)
-                            .enter()
-                            .append('circle')
-                            .attr('x', function (datum, k){return (k*20)+20})
-                            .attr('y', 100)
-                            .attr('r', function (d){return d[k]})
-                            .attr('fill', 'white');
-                                
-                            
-                            
-                        });
-                        
-                    
+                    });
                 });
 
         g.append('line')
@@ -114,6 +100,39 @@ d3.json('finalformatArray.json', function(error, data) {
             .attr("x", 400)
             .attr("y", function (d) {return yScale1(d.LastECI)+9})
             .attr('text-anchor', 'middle');
+        
+        g.append('text')
+            .attr('class', 'biglabels')
+            .text(function (d) {return d.LastGDP;})
+            .attr("x", 60)
+            .attr("y", function (d) {return yScale2(d.LastGDP)-9})
+            .attr('text-anchor', 'left')
+            .style('visibility', 'hidden')
+            ;
+            
+            svg.append('text')
+            .attr('class', 'biglabels')
+            .text('GINI (most recent year)')
+            .attr("x", 750)
+            .attr("y", 35)
+            .style('text-anchor', 'end')
+            ;
+            
+            svg.append('text')
+            .attr('class', 'biglabels')
+            .text('ECI (2016)')
+            .attr("x", 400)
+            .attr("y", 35)
+            .style('text-anchor', 'middle')
+            ;
+            
+            svg.append('text')
+            .attr('class', 'biglabels')
+            .text('GDP per Capita, US$ dollars (in 2016)')
+            .attr("x", 50)
+            .attr("y", 35)
+            .attr('text-anchor', 'left')
+            ;
             
         var YAxisGDP = d3.axisLeft()
             .scale(yScale2)
@@ -141,27 +160,11 @@ d3.json('finalformatArray.json', function(error, data) {
             .attr("y1", function (d) {return yScale2(d.LastGDP)})
             .attr("x2", 270)
             .attr("y2", function (d) {return yScale1(d.LastECI)});
+            
+            
+
+
 
    });
-    
-var Countries = [];
-
-console.log(Countries);
-
-d3.json('finalformatArray.json', function(error, newdata) {
-if (error) throw error;
-console.log(newdata[0].ECI);
-
-})
-
-// function loglast(){
-    
-//     for (var i = newdata.length; i--; ) {
-//         Things[i];
-//     }
-    
-    
-//     if (true) {
-        
-//     }
-// }
+   
+   
