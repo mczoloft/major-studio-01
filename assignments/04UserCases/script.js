@@ -143,12 +143,30 @@ d3.json('finalformatValues.json', function(error, data) {
             .scale(yScale3)
             .ticks(5);
             
+        var YAxisECI = d3.axisRight()
+            .scale(yScale1)
+            .ticks(3);
+            
+        var YAxisECI2 = d3.axisLeft()
+            .scale(yScale1)
+            .ticks(3);
+            
         var padding = 50;
         
         svg.append('g')
         	.attr('class', 'axis')
         	.attr('transform', 'translate(' + padding + ', 0)')
         	.call(YAxisGDP);
+        	
+        svg.append('g')
+        	.attr('class', 'axis')
+        	.attr('transform', 'translate(350, 0)')
+        	.call(YAxisECI);
+        	
+    	svg.append('g')
+        	.attr('class', 'axis')
+        	.attr('transform', 'translate(450, 0)')
+        	.call(YAxisECI2);
         	
         svg.append('g')
             .attr('class', 'axis')
