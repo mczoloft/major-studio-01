@@ -34,7 +34,11 @@ Many thanks to [Gabriel Gianordoli](http://gianordoli.com), who has helped with 
 
 #### Special thanks
 To [Fernanda Didini](http://fdidini.com/), for helping with research and design questions, and for being so patient. 
+
 To Gabriel, for the code and techincal support!
-To [Daniel Sauter](http://danielsauter.com/gallery.php), for guiding us through the Major Studio class where this was developed/
+
+To [Daniel Sauter](http://danielsauter.com/gallery.php), for guiding us through the Major Studio class where this was developed.
+
 To [Will Su](https://www.behance.net/suj1977a0f), for helping everyone and bringing many good examples.
+
 All of my coleague at this course, for their words of support. Their amazing work can be seen [here](https://visualizedata.github.io/undp-inequality-trends/index.html)
