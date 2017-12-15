@@ -1,3 +1,6 @@
+// Code adapted from Gabriel Gianordoli's class for Parsons
+// https://github.com/gianordoli/dataviz_spring_2016
+// With his help
 
 // 1. Our function will now return an object
 // It's like we're defining a Class Chart
@@ -121,8 +124,7 @@ var BarChart = function(){
             .duration(2000)                    
             .call(yAxis)
             ;
-        
-            
+
         /*----- DRAWING -----*/
         var bars = chart.selectAll(".bar").data(dataset);
 
@@ -133,15 +135,11 @@ var BarChart = function(){
             .on('mouseover', function(d) {
                 d3.select(this)
                 .classed('hover', true)
-                .select('text')
-                .attr('visibility', 'visible')
                 ;
             })
             .on('mouseout', function(d) {
                 d3.select(this)
                 .classed('hover', false)
-                .select('text')
-                .attr('visibility', 'hidden')
                 ;
             })
             .merge(bars)
@@ -153,9 +151,7 @@ var BarChart = function(){
             .attr("width", xScale.bandwidth())
             .attr("fill", color)
             ;
-            
-            
-            
+
     }
     // 11. Nothing works if we don't
     // return the object in the end

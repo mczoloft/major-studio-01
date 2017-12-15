@@ -19,17 +19,10 @@ d3.json('finalformatValues.json', function(error, data) {
     console.log(CountryData);
     
     var yScale1 = d3.scaleLinear()
-    // .domain([d3.min(data, function (d) { return d.LastECI}), d3.max(data, function(d) { return d.LastECI; })])
     .domain([-2.3,0.2])
     .range([750, 100]);
     
-    // console.log('maior ECI: ' + d3.max(data, function(d) { return d.LastECI}));
-    // console.log('menor ECI: ' + d3.min(data, function(d) { return d.LastECI}));
-    // console.log('maior GINI: ' + d3.max(data, function(d) { return d.LastGINI}));
-    // console.log('menor GINI: ' + d3.min(data, function(d) { return d.LastGINI}));
-    
     var yScale2 = d3.scaleLog()
-    // .domain([d3.min(data, function (d) { return d.LastGDP}), d3.max(data, function(d) { return d.LastGDP; })])
     .domain([100, 10000])
     .range([750, 100]);
     
@@ -64,7 +57,6 @@ d3.json('finalformatValues.json', function(error, data) {
                         
                     d3
                     .select('#viz3')
-                    // .style('background-color', 'red')
                     .html(d.Country_Name + '<br><small>latest data</small><br><span class="labelgdp">GDP: US$ ' + d.LastGDP + ' </span>   <span class="labeleci">ECI: ' + d.LastECI + '   </span> <span class="labelgini">GINI: ' + d.LastGINI + '</span>')
                     ;
                         
